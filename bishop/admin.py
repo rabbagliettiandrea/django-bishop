@@ -23,7 +23,7 @@ class LogEntryAdmin(ModelAdmin):
 
     ACTION_FLAGS = {1: 'ADDITION', 2: 'CHANGE', 3: 'DELETION'}
     date_hierarchy = 'action_time'
-    readonly_fields = LogEntry._meta.get_all_field_names()
+    readonly_fields = [x.name for x in LogEntry._meta.local_fields]
     list_filter = (LogEntry_ActionFilter,)
     search_fields = ('object_repr', 'change_message')
     list_display = ('action_time', 'user', 'content_type', 'object_link', 'action_verbose', 'change_message',)
