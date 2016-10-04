@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
 
 from __future__ import unicode_literals, division
+
 from django.core.urlresolvers import reverse
 from django.db.models import Model, DateTimeField
 from django.utils.html import escape
+
 from bishop.datetime_utils import get_utc_now
 
 
