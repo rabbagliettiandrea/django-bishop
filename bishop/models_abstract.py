@@ -4,7 +4,7 @@ from __future__ import unicode_literals, division
 from django.core.urlresolvers import reverse
 from django.db.models import Model, DateTimeField
 from django.utils.html import escape
-from django_zilla.utils.datetime_utils import get_utc_now
+from bishop.datetime_utils import get_utc_now
 
 
 class TimedatedModel(Model):
