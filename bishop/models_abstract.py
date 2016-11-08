@@ -6,8 +6,6 @@ from django.core.urlresolvers import reverse
 from django.db.models import Model, DateTimeField
 from django.utils.html import escape
 
-from bishop.datetime_utils import get_utc_now
-
 
 class TimedatedModel(Model):
     timestamp_created = DateTimeField(auto_now_add=True, null=True, db_index=True, editable=False)
