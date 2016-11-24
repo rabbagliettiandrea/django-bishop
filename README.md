@@ -3,7 +3,7 @@
 
 What is Bishop?
 --------------
-Bishop is just a container of a bunch of useful devops script to facilitate your work ;)
+Bishop is just a container of a bunch of useful utils/mixin to facilitate your work ;)
 
 Why did you choose the name Bishop?
 ----------------------------------
